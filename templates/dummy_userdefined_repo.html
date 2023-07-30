@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Repository Details</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>User Repository Details</h1>
+        {% if data %}
+        <div class="card mt-3">
+            <div class="card-header">
+                <h3>{{ data['name'] }}</h3>
+            </div>
+            <div class="card-body">
+                <p class="card-text"><strong>Username:</strong> {{ data['username'] }}</p>
+                <p class="card-text"><strong>Description:</strong> {{ data['description'] }}</p>
+                <p class="card-text"><strong>Language:</strong> {{ data['language'] }}</p>
+                <p class="card-text"><strong>Fork Count:</strong> {{ data['forks_count'] }}</p>
+                <p class="card-text"><strong>Star Count:</strong> {{ data['stargazers_count'] }}</p>
+                <p class="card-text"><strong>Subscriber Count:</strong> {{ data['subscribers_count'] }}</p>
+                <p class="card-text"><strong>Recent Activity:</strong> {{ data['contributor_count'] }}</p>
+            </div>
+        </div>
+        {% else %}
+        <div class="alert alert-danger mt-3" role="alert">
+            User not found
+        </div>
+        {% endif %}
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

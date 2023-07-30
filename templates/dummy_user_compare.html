@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare User Profiles and Starred Repositories</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Compare User Profiles</h1>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h2>User 1 Profile</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Username:</strong> {{ content1['login'] }}</li>
+                    <li class="list-group-item"><strong>Name:</strong> {{ content1['name'] }}</li>
+                    <li class="list-group-item"><strong>Email:</strong> {{ content1['email'] }}</li>
+                    <li class="list-group-item"><strong>Bio:</strong> {{ content1['bio'] }}</li>
+                    <li class="list-group-item"><strong>Followers:</strong> {{ content1['followers'] }}</li>
+                    <li class="list-group-item"><strong>Following:</strong> {{ content1['following'] }}</li>
+                    <li class="list-group-item"><strong>Public Repos:</strong> {{ content1['public_repos'] }}</li>
+                    <li class="list-group-item"><strong>Followers URL:</strong> {{ content1['followers_url'] }}</li>
+                    <li class="list-group-item"><strong>Following URL:</strong> {{ content1['following_url'] }}</li>
+                    <li class="list-group-item"><strong>Created At:</strong> {{ content1['created_at'] }}</li>
+                    <li class="list-group-item"><strong>Updated At:</strong> {{ content1['updated_at'] }}</li>
+                    <li class="list-group-item"><strong>Most Starred Repo:</strong> {{ content1['most_starred_repo'] }}</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2>User 2 Profile</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Username:</strong> {{ content2['login'] }}</li>
+                    <li class="list-group-item"><strong>Name:</strong> {{ content2['name'] }}</li>
+                    <li class="list-group-item"><strong>Email:</strong> {{ content2['email'] }}</li>
+                    <li class="list-group-item"><strong>Bio:</strong> {{ content2['bio'] }}</li>
+                    <li class="list-group-item"><strong>Followers:</strong> {{ content2['followers'] }}</li>
+                    <li class="list-group-item"><strong>Following:</strong> {{ content2['following'] }}</li>
+                    <li class="list-group-item"><strong>Public Repos:</strong> {{ content2['public_repos'] }}</li>
+                    <li class="list-group-item"><strong>Followers URL:</strong> {{ content2['followers_url'] }}</li>
+                    <li class="list-group-item"><strong>Following URL:</strong> {{ content2['following_url'] }}</li>
+                    <li class="list-group-item"><strong>Created At:</strong> {{ content2['created_at'] }}</li>
+                    <li class="list-group-item"><strong>Updated At:</strong> {{ content2['updated_at'] }}</li>
+                    <li class="list-group-item"><strong>Most Starred Repo:</strong> {{ content2['most_starred_repo'] }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Repository Details</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Compare Repository Details</h1>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h2>Repository 1 Details</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Username:</strong> {{ content1['username'] }}</li>
+                    <li class="list-group-item"><strong>Repository Name:</strong> {{ content1['name'] }}</li>
+                    <li class="list-group-item"><strong>Description:</strong> {{ content1['description'] }}</li>
+                    <li class="list-group-item"><strong>Language:</strong> {{ content1['language'] }}</li>
+                    <li class="list-group-item"><strong>Fork Count:</strong> {{ content1['forks_count'] }}</li>
+                    <li class="list-group-item"><strong>Star Count:</strong> {{ content1['stargazers_count'] }}</li>
+                    <li class="list-group-item"><strong>Subscriber Count:</strong> {{ content1['subscribers_count'] }}</li>
+                    <li class="list-group-item"><strong>Recent Activity:</strong> {{ content1['contributor_count'] }}</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2>Repository 2 Details</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Username:</strong> {{ content2['username'] }}</li>
+                    <li class="list-group-item"><strong>Repository Name:</strong> {{ content2['name'] }}</li>
+                    <li class="list-group-item"><strong>Description:</strong> {{ content2['description'] }}</li>
+                    <li class="list-group-item"><strong>Language:</strong> {{ content2['language'] }}</li>
+                    <li class="list-group-item"><strong>Fork Count:</strong> {{ content2['forks_count'] }}</li>
+                    <li class="list-group-item"><strong>Star Count:</strong> {{ content2['stargazers_count'] }}</li>
+                    <li class="list-group-item"><strong>Subscriber Count:</strong> {{ content2['subscribers_count'] }}</li>
+                    <li class="list-group-item"><strong>Recent Activity:</strong> {{ content2['contributor_count'] }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

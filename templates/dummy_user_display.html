@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>User Profile</h1>
+        <div class="card mt-3">
+            <div class="card-header">
+                <h2>{{ user.login }}</h2>
+            </div>
+            <div class="card-body">
+                <p><strong>Name:</strong> {{ user.name }}</p>
+                <p><strong>Email:</strong> {{ user.email }}</p>
+                <p><strong>Bio:</strong> {{ user.bio }}</p>
+                <p><strong>Followers:</strong> {{ user.followers }}</p>
+                <p><strong>Following:</strong> {{ user.following }}</p>
+                <p><strong>Public Repositories:</strong> {{ user.public_repos }}</p>
+                <p><strong>Starred Repository:</strong> {{ user.most_starred_repo }}</p>
+                <p><strong>Followers URL:</strong> <a href="{{ user.followers_url }}">{{ user.followers_url }}</a></p>
+                <p><strong>Following URL:</strong> <a href="{{ user.following_url }}">{{ user.following_url }}</a></p>
+                <p><strong>Created at:</strong> {{ user['created_at'] }}</p>
+                <p><strong>Updated at:</strong> {{ user['updated_at'] }}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
